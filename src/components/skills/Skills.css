@@ -1,0 +1,88 @@
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-background {
+  text-align: center;
+  color: white;
+  background: #ffffff;
+  margin: 50px 0;
+  border-radius: 10px;
+  width: 70%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.skills-background.show{
+  opacity: 1;
+}
+
+.skills-background .text {
+  padding: 30px;
+}
+
+.skills-background .text .title {
+  color: #bd76f3;
+}
+
+.skills-background .text .subtitle {
+  color: #707070;
+}
+
+.skills-background .carrosel {
+  padding: 0 30px 30px 30px;
+  color: #bd76f3;
+}
+
+.skills-background .carrosel .slick-slide div div {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.skills-background .carrosel .slick-slide div div:hover {
+  transform: scale(1.1);
+}
+
+.skills-background .carrosel img {
+  width: 40px;
+  height: 40px;
+}
+
+.skills-background .carrosel h6 {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .skills-background .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-background .text .subtitle {
+    color: #707070;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-background .carrosel {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .skills-background .carrosel img {
+    width: 80px;
+    height: 80px;
+  }
+  
+
+  .skills-background .carrosel {
+    padding: 100px;
+  }
+}

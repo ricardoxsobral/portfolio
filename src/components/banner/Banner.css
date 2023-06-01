@@ -1,0 +1,78 @@
+.banner-content {
+  position: relative;
+  top: 10vh;
+}
+
+.img-ricardo {
+  display: flex;
+  justify-content: center;
+}
+
+.img-ricardo img {
+  width: 70%;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.apresent {
+  text-align: center;
+  color: white;
+  background: #000000cc;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.apresent span {
+  color: #bd76f3;
+}
+
+@media (min-width: 768px) {
+  .img-ricardo img {
+    width: 60%;
+  }
+
+  .coluna-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apresent{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .banner-content{
+    top: 28vh;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .img-ricardo img {
+    width: 90%;
+  }
+  .apresent{
+    width: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .banner-content{
+    top: 22vh;
+  }
+  .img-ricardo img {
+    width: 80%;
+  }
+  .apresent{
+    width: 80%;
+  }
+}
